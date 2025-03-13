@@ -53,7 +53,6 @@ public class PracticeFormWithPageObject extends TestBase {
                     .checkMinimalDataResult("Gender","Other");
         }
 
-
         @Test
     void negativeRegistrationTest() {
         pageObject.openPage()//Открытие страницы

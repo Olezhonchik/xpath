@@ -1,11 +1,10 @@
-package ru.vkusvill;
+package ru.vkusvillTests;
 
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import java.io.File;
+
 
 import static com.codeborne.selenide.Condition.appear;
 import static com.codeborne.selenide.Condition.text;
@@ -51,8 +50,7 @@ public class PracticeForm {
         //Проверки
         $x("//div[contains(@class, 'modal-dialog modal-lg')]").should(appear); //Проверка появления формы успешного заполнения
         $x("//div[contains(@id, 'example-modal-sizes-title-lg')]").shouldHave(text("Thanks for submitting the form")); //Проверка появления формы успешного заполнения
-        $x("//div[contains(@class, 'modal-body')]").shouldHave(text("Boba Fedotov"), text("BobaFedotov@mail.ru"), text("8800555353"));
-        //Проверка правильности заполнения формы
+        $x("//div[contains(@class, 'modal-body')]").shouldHave(text("Boba Fedotov"), text("BobaFedotov@mail.ru"), text("8800555353"));//Проверка правильности заполнения формы
 
 
 

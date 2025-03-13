@@ -52,11 +52,5 @@ public class PracticeForm {
         $x("//div[contains(@id, 'example-modal-sizes-title-lg')]").shouldHave(text("Thanks for submitting the form")); //Проверка появления формы успешного заполнения
         $x("//div[contains(@class, 'modal-body')]").shouldHave(text("Boba Fedotov"), text("BobaFedotov@mail.ru"), text("8800555353"));//Проверка правильности заполнения формы
 
-
-
-
-
-
-
     }
 }

@@ -149,6 +149,5 @@ public class PageObject {
                 .shouldHave(text(value));//Проверка правильности заполнения формы
 
         return this;
-
     }
 }
